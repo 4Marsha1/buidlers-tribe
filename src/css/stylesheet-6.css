@@ -1,0 +1,226 @@
+/* Imported Roboto font  */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+/* Designed for mobile first */
+/* overall layout of the content  */
+.layout__region {
+	width: 100%;
+}
+
+/* program details box  */
+.program__box {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 1rem;
+	padding: 4rem 0 10rem 0;
+}
+.program__box__heading {
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+	font-size: 28px;
+}
+.program__box__subheading {
+	font-family: "Roboto", sans-serif;
+	font-weight: 600;
+	font-size: 42px;
+}
+.program__box__text {
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+}
+.program__box__date {
+	display: flex;
+	gap: 1rem;
+	align-items: center;
+	margin: 2rem 0;
+}
+.program__box__date__text {
+	font-size: 18px;
+	font-family: "Roboto", sans-serif;
+	font-weight: 600;
+}
+.program__box__btn {
+	width: 200px;
+}
+
+/* funding details box  */
+.funding__box__layout {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	padding: 2rem;
+	gap: 2rem;
+}
+/* horizontal seperator */
+.hr {
+	height: 2px;
+	background: linear-gradient(
+		180deg,
+		rgba(0, 0, 0, 0) 0%,
+		#000000 46.52%,
+		rgba(0, 0, 0, 0) 100%
+	);
+}
+/* vertical seperator */
+.vr {
+	width: 0;
+	background: linear-gradient(
+		180deg,
+		rgba(0, 0, 0, 0) 0%,
+		#000000 46.52%,
+		rgba(0, 0, 0, 0) 100%
+	);
+}
+.funding__box {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+}
+.funding__box__text__gray {
+	font-family: "Roboto", sans-serif;
+	font-weight: 600;
+	text-align: center;
+	font-size: 16px;
+	color: #999999;
+}
+.funding__box__text__black {
+	font-family: "Roboto", sans-serif;
+	font-weight: 600;
+	font-size: 40px;
+}
+.funding__box__text__black__sm {
+	font-family: "Roboto", sans-serif;
+	font-weight: 600;
+	font-size: 16px;
+}
+.funding__box__coindcx__logo {
+	margin-top: 4rem;
+	width: 120px;
+}
+
+/* mentoring details box  */
+.mentoring__box {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 4rem;
+	padding: 10rem 0 12rem 0;
+}
+.mentoring__box__title {
+	font-size: 26px;
+	font-family: "Roboto", sans-serif;
+	font-weight: 700;
+}
+.mentoring__box__mentor__layout {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.mentoring__box__mentor {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.mentoring__box__mentor__name {
+	font-size: 20px;
+	font-family: "Roboto", sans-serif;
+	font-weight: 700;
+	text-align: center;
+}
+
+/* faq section */
+.faq__box {
+	display: flex;
+	flex-direction: column;
+	gap: 3rem;
+}
+.faq__box__title {
+	font-size: 26px;
+	font-family: "Roboto", sans-serif;
+	font-weight: 600;
+}
+.faq__box__content {
+	font-size: 16px;
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+}
+
+/* media query for min screen width of 720px */
+@media screen and (min-width: 720px) {
+	.program__box__heading {
+		font-size: 32px;
+	}
+	.program__box__subheading {
+		font-size: 48px;
+	}
+	.program__box__text {
+		font-size: 20px;
+	}
+	.program__box__date__text {
+		font-size: 20px;
+	}
+	.program__box__btn {
+		width: 300px;
+	}
+	.funding__box__layout {
+		flex-direction: row;
+	}
+	.funding__box__text__gray {
+		font-size: 28px;
+	}
+	.funding__box__text__black {
+		font-size: 100px;
+	}
+	.funding__box__text__black__sm {
+		font-size: 28px;
+	}
+	.funding__box__coindcx__logo {
+		width: 200px;
+	}
+	.vr {
+		width: 2px;
+	}
+	.hr {
+		width: 0;
+	}
+	.mentoring__box__mentor__name {
+		font-size: 24px;
+	}
+	.mentoring__box__title {
+		font-size: 32px;
+	}
+	.mentoring__box__mentor__layout {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 2rem;
+	}
+	.faq__box__title {
+		font-size: 32px;
+	}
+	.faq__box__content {
+		font-size: 20px;
+	}
+}
+
+/* media query for min screen width of 1024px */
+@media screen and (min-width: 1024px) {
+	.funding__box__text__gray {
+		font-size: 32px;
+	}
+	.funding__box__text__black {
+		font-size: 132px;
+	}
+	.funding__box__text__black__sm {
+		font-size: 32px;
+	}
+	.funding__box__coindcx__logo {
+		width: 287px;
+	}
+}
